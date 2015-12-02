@@ -1,11 +1,11 @@
-class ApplicationController < Sinatra::base
+class ApplicationController < Sinatra::Base
 
   require "bundler"
   Bundler.require
 
   ActiveRecord::Base.establish_connection(
+    :database => 'sinatra_songs',
     :adapter => 'postgresql'
-    :database => 'sinatra_songs'
   )
 
   set :views, File.expand_path('../../views', __FILE__)

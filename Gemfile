@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-require "sinatra"
-require "pg"
-require "sinatra-activerecord"
-require "json"
+gem "sinatra"
+gem "pg"
+gem "sinatra-activerecord"
+gem "json"

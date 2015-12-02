@@ -1,5 +1,6 @@
 <p>
+  <% p @songs %>
   <% @songs.each do |song| %>
-  <li><%= song.title + " was recorded by " + song.artist + " in " + song.release_year %></li>
+    <li><%= song.title%> was recorded by <%= song.artist %> in <%= song.release_year %></li>
   <% end %>
 </p>

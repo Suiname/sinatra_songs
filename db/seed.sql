@@ -1,0 +1,1 @@
+INSERT INTO songs (artist, title, release_year) VALUES ('Frank Sinatra',  'I Get a Kick Out of You', '1954'),('Frank Sinatra', 'My Way', '1969'),('Frank Sinatra', 'My Kind of Town', '1964'),('Frank Sinatra', 'Luck Be a Lady', '1965');

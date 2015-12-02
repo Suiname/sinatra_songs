@@ -8,12 +8,15 @@ class ApplicationController < Sinatra::base
     :database => 'sinatra_songs'
   )
 
-get '/' do
-  :index
-end
+  set :views, File.expand_path('../../views', __FILE__)
 
-not_found do
-  erb :lost
-end
+  get '/' do
+    @songs = Song.all
+    :index
+  end
+
+  not_found do
+    erb :lost
+  end
 
 end

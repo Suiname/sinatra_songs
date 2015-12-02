@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
 
   get '/' do
     @songs = Song.all
-    :index
+    erb :index
   end
 
   not_found do
